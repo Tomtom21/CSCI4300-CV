@@ -7,23 +7,26 @@
     <title>Thomas Quinlan</title>
     <meta name="description" content="about Thomas Quinlan">
     <link rel="stylesheet" href="css/cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <p>
             <a href="contact.html">
-                <p>Contact Thomas Quinlan</p>
+                Contact Thomas Quinlan
             </a>
         </p>
     </nav>
 
-    <section>
+    <section class="section1">
         <h1>Thomas A. Quinlan</h1>
         <h2>Full Stack Developer</h2>
     </section>
 
-    <section>
+    <section class="section2">
         <image src="images/portrait.jpg" alt="A portrait of Tom" width="200"></image>
         <h2>Hello there</h2>
         <p>
@@ -33,33 +36,44 @@
         </p>
         <hr>
         <h2>About Thomas Quinlan</h2>
-        <h3>Languages</h3>
-        <ul>
-            <li>Python</li>
-            <li>Typescript/Javascript</li>
-            <li>C/C++</li>
-            <li>Java</li>
-        </ul>
-
-        <h3>Leadership and Experience</h3>
-        <dl>
-            <dt>6/2022 - Now</dt>
-            <dd>
-                <a href="https://www.globalpayments.com/" target="_blank">
-                    Global Payments 
-                </a>
-            </dd>
-        </dl>
-
-        <h3>Skills</h3>
-        <dl>
-            <dt>Backend Development</dt>
-            <dd>⭐️⭐️⭐️⭐️</dd>
-            <dt>Presentation</dt>
-            <dd>⭐️⭐️</dd>
-            <dt>Frontend Development</dt>
-            <dd>⭐️⭐️⭐️</dd>
-        </dl>
+        <div class="three-col">
+            <div class="card">
+                <image src="images/pythonimage.png" alt="An image of the python programming language logo" width="100"></image>
+                <h3>Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Typescript/Javascript</li>
+                    <li>C/C++</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+    
+            <div class="card">
+                <image src="images/bar-graph.png" alt="A bar graph" width="100"></image>
+                <h3>Leadership and Experience</h3>
+                <dl>
+                    <dt>6/2022 - Now</dt>
+                    <dd>
+                        <a href="https://www.globalpayments.com/" target="_blank">
+                            Global Payments 
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+    
+            <div class="card">
+                <image src="images/tools.png" alt="An set of tools" width="100"></image>
+                <h3>Skills</h3>
+                <dl>
+                    <dt>Backend Development</dt>
+                    <dd>⭐️⭐️⭐️⭐️</dd>
+                    <dt>Presentation</dt>
+                    <dd>⭐️⭐️</dd>
+                    <dt>Frontend Development</dt>
+                    <dd>⭐️⭐️⭐️</dd>
+                </dl>
+            </div>
+        </div>
     </section>
 
     <footer>
