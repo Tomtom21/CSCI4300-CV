@@ -1,18 +1,18 @@
 body {
     margin: 0;
-    background-color: #c0c0c0;
+    background-color: #ede7e3;
 }
 
 /* Styling nav/navbar */
 nav {
-    background-color: #666;
+    background-color: #354f52;
     padding: 5px;
     display: flex;
     justify-content: right;
 }
 
 a {
-    background-color: #444;
+    background-color: #738f8e;
     border-radius: 4px;
     color: white;
     text-decoration: none;
@@ -21,14 +21,14 @@ a {
 }
 
 a:hover {
-    filter: brightness(0.8);
-    color: #cfb8e4;
+    filter: brightness(0.9);
+    color: #b7c5c3;
 }
 
 
 /* Styling footer */
 footer {
-    background-color: #444;
+    background-color: #354f52;
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -37,14 +37,60 @@ footer {
 
 /* Sections */
 .section1 {
-    background-color: #b9b9b9;
+    background-color: white;
     padding: 20px;
+    font-family: "Lobster", sans-serif;
+}
+
+.section1 > * {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes rainbow {
+    0% { color: indigo; }
+    14% { color: violet; }
+    28% { color: red; }
+    42% { color: orange; }
+    57% { color: yellow; }
+    71% { color: green; }
+    85% { color: blue; }
+    100% { color: indigo; }
+}
+
+.section1 > h1:hover {
+    transition: color 0.5s ease;
+    animation: rainbow 3s infinite;
+}
+
+.section1 > h2 {
+    font-family: "Karla", sans-serif;
 }
 
 .section2 { 
     padding: 20px;
-}   
+}
 
+.section2 > h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+}
+
+.section2 > p {
+    display: flex;
+    justify-content: center;
+    font-family: "Karla", sans-serif;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.section2 > img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
 
 /* Cards */
 h3 {
@@ -52,18 +98,24 @@ h3 {
     font-family: "Oswald", sans-serif;
 }
 
+dl {
+    display: flex;
+    flex-direction: column;
+}
+
 dl > * {
-    color: white;
+    color: black;
     font-family: "Karla", sans-serif;
 }
 
+/* For styling the years */
 dl > dt {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 ul > * {
-    color: white;
+    color: black;
     font-family: "Karla", sans-serif;
 }
 
@@ -79,13 +131,23 @@ hr {
 
 /* Cards */
 .card {
-    display:block;
+    display: block;
     border-style: solid;
     border-radius: 5px;
     border-width: 2px;
     border-color: black;
     padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #c3c9c6 ;
+    color: black
+    /* background-color: ; */
+}
+
+.card > img {
+    display: block;
+    margin: 0 auto;
 }
 
 .card:hover {
@@ -95,5 +157,35 @@ hr {
 .three-col {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px
+    grid-column-gap: 5px;
+}
+
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Styling contacts page */
+body > h1, body > p {
+    display: flex;
+    justify-content: center;
+}
+
+.card > form > input, .card > form > textarea{
+    border-radius: 5px;
+}
+
+.card > form > input {
+    height: 30px;
+}
+
+.card > form > textarea {
+    height: 50px;
+    width: 30%;
 }
